@@ -1,0 +1,36 @@
+{
+  "name": "rviz",
+  "version": "0.1.0",
+  "description": "Terminal file tree navigator for referencing source files in Claude prompts",
+  "bin": {
+    "rviz": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "clipboardy": "^4.0.0",
+    "ignore": "^6.0.2",
+    "ink": "^5.1.0",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.11",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "type": "module",
+  "tsup": {
+    "entry": ["src/index.ts"],
+    "format": ["esm"],
+    "dts": false,
+    "minify": false,
+    "banner": {
+      "js": "#!/usr/bin/env node"
+    }
+  }
+}
