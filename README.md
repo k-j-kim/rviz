@@ -4,6 +4,8 @@ Terminal file tree navigator for referencing source files in Claude prompts.
 
 Browse your project tree, find files quickly, and copy their paths to clipboard — without leaving the terminal.
 
+![rviz demo](assets/screenshot.gif)
+
 ## Install
 
 ```bash
